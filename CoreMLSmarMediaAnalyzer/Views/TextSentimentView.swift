@@ -23,7 +23,7 @@ struct TextSentimentView: View {
             "This is terrible. Worst experience ever.",
             "It's okay, nothing special.",
             "The weather is not nice today.",
-            "I'm so happy with the results!"
+            "I'm so happy with the results!","I love your style","your face looks like a foot"
     ]
     
     var body: some View {
