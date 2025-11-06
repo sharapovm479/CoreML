@@ -18,11 +18,12 @@ struct TextSentimentView: View {
     
     // Sample texts for quick testing
     private let sampleTexts = [
-        "I absolutely love this app! It's amazing!",
-        "This is terrible. Worst experience ever.",
-        "It's okay, nothing special.",
-        "The weather is nice today.",
-        "I'm so happy with the results!"
+        "I love your style","your face looks like a foot",
+            "I absolutely love this app! It's amazing!",
+            "This is terrible. Worst experience ever.",
+            "It's okay, nothing special.",
+            "The weather is not nice today.",
+            "I'm so happy with the results!"
     ]
     
     var body: some View {
