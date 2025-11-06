@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		43D8E29D2EB8ED95003875BC /* ImageClassifierKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43D8E29C2EB8ED95003875BC /* ImageClassifierKit */; };
+		43D8E29F2EB8EDA0003875BC /* SentimentClassifierKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43D8E29E2EB8EDA0003875BC /* SentimentClassifierKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		43D8E1D62EB26664003875BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D8E29F2EB8EDA0003875BC /* SentimentClassifierKit in Frameworks */,
+				43D8E29D2EB8ED95003875BC /* ImageClassifierKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				43D8E1C52EB26662003875BC /* CoreMLSmarMediaAnalyzer */,
 				43D8E1D82EB26664003875BC /* CoreMLSmarMediaAnalyzerTests */,
 				43D8E1E22EB26664003875BC /* CoreMLSmarMediaAnalyzerUITests */,
+				43D8E29B2EB8ED95003875BC /* Frameworks */,
 				43D8E1C42EB26662003875BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				43D8E1DF2EB26664003875BC /* CoreMLSmarMediaAnalyzerUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		43D8E29B2EB8ED95003875BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +127,8 @@
 			);
 			name = CoreMLSmarMediaAnalyzer;
 			packageProductDependencies = (
+				43D8E29C2EB8ED95003875BC /* ImageClassifierKit */,
+				43D8E29E2EB8EDA0003875BC /* SentimentClassifierKit */,
 			);
 			productName = CoreMLSmarMediaAnalyzer;
 			productReference = 43D8E1C32EB26662003875BC /* CoreMLSmarMediaAnalyzer.app */;
@@ -195,6 +212,10 @@
 			);
 			mainGroup = 43D8E1BA2EB26662003875BC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				43D8E2992EB8EC46003875BC /* XCLocalSwiftPackageReference "Packages/ImageClassifierKit" */,
+				43D8E29A2EB8EC76003875BC /* XCLocalSwiftPackageReference "Packages/SentimentClassifierKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 43D8E1C42EB26662003875BC /* Products */;
 			projectDirPath = "";
@@ -558,6 +579,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		43D8E2992EB8EC46003875BC /* XCLocalSwiftPackageReference "Packages/ImageClassifierKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ImageClassifierKit;
+		};
+		43D8E29A2EB8EC76003875BC /* XCLocalSwiftPackageReference "Packages/SentimentClassifierKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SentimentClassifierKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43D8E29C2EB8ED95003875BC /* ImageClassifierKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43D8E2992EB8EC46003875BC /* XCLocalSwiftPackageReference "Packages/ImageClassifierKit" */;
+			productName = ImageClassifierKit;
+		};
+		43D8E29E2EB8EDA0003875BC /* SentimentClassifierKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43D8E29A2EB8EC76003875BC /* XCLocalSwiftPackageReference "Packages/SentimentClassifierKit" */;
+			productName = SentimentClassifierKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43D8E1BB2EB26662003875BC /* Project object */;
 }
